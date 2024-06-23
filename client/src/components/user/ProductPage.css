@@ -1,0 +1,205 @@
+
+  
+  .custom-control {
+    position: relative;
+    z-index: 1;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+   
+  }
+  
+  .custom-control-inline {
+    display: inline-flex;
+    margin-right: 1rem;
+  }
+  
+  .custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0;
+  }
+  
+  .custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #FFD333;
+    background-color: #FFD333;
+  }
+  
+  .custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+  }
+  
+  .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: #ffefb3;
+  }
+  
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    color: #fff;
+    background-color: #fffae6;
+    border-color: #fffae6;
+  }
+  
+  .custom-control-input[disabled] ~ .custom-control-label, .custom-control-input:disabled ~ .custom-control-label {
+    color: #6c757d;
+  }
+  
+  .custom-control-input[disabled] ~ .custom-control-label::before, .custom-control-input:disabled ~ .custom-control-label::before {
+    background-color: #e9ecef;
+  }
+  
+  .custom-control-label {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+  }
+  
+  .custom-control-label::before {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    content: "";
+    background-color: #fff;
+    border: #adb5bd solid 1px;
+  }
+  
+  .custom-control-label::after {
+    position: absolute;
+    top: 0.25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    background: no-repeat 50% / 50% 50%;
+  }
+  
+  .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
+  }
+  
+  .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
+    border-color: #FFD333;
+    background-color: #FFD333;
+  }
+  
+  .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3e%3cpath stroke='%23fff' d='M0 2h4'/%3e%3c/svg%3e");
+  }
+  
+  .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba(255, 211, 51, 0.5);
+  }
+  
+  .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
+    background-color: rgba(255, 211, 51, 0.5);
+  }
+  
+  
+  .product-item {
+    transition: .5s;
+  }
+  
+  .product-action {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+  }
+  
+  .product-action button.btn {
+    position: relative;
+    margin: 0 3px;
+    margin-top: 100px;
+    opacity: 0;
+  }
+  
+  .product-item:hover {
+    box-shadow: 0 0 30px #DDDDDD;
+  }
+  
+  .product-item:hover .product-action {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  
+  .product-item:hover .product-action button.btn:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s 0s;
+  }
+  
+  .product-item:hover .product-action button.btn:nth-child(2) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .05s;
+  }
+  
+  .product-item:hover .product-action button.btn:nth-child(3) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+  }
+  
+  .product-item:hover .product-action button.btn:nth-child(4) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .15s;
+  }
+  
+  .product-item .product-img img {
+    transition: .5s;
+  }
+  
+  .product-item:hover .product-img img {
+    transform: scale(1.2);
+  }
+  
+  .product-item .btn:hover  {
+    color: #FFD333 !important;
+  }
+
+  .product-item  .btn:hover .linkview {
+    color: #FFD333 !important;
+  }
+  
+  .table.table-borderless thead tr,
+  .table.table-borderless tbody tr:not(:last-child) {
+    border-bottom: 15px solid #F5F5F5;
+  }
+  
+  .contact-form .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+    animation: action 1s infinite alternate;
+  }
+  
+  @keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+  

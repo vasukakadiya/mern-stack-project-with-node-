@@ -1,0 +1,110 @@
+/* Custom Styles for Homepage */
+.homepage-container {
+   
+    font-family: Arial, sans-serif;
+    background-color: #eff1f3; /* Light gray background */
+    /* padding: 150px 0; */
+     /* Add padding to the top and bottom */
+}
+  
+.homepage-row {
+    /* background-image: url('./hero-bg.jpg');  */
+    /* Replace with your image path */
+    background-color: #eff1f3;
+    background-size: cover;
+  background-position: center; 
+  /* Set background position to left */
+  border-radius: 8px; /* Rounded corners */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+  /* Shadow for the row */
+  padding: 40px; /* Padding inside the row */
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Center items vertically */
+}
+  
+.img-box {
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0; /* Prevent image from shrinking */
+  margin-left: 20px; /* Add margin to the right of the image */
+}
+  
+.img-box img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    /* Make the image a block element */
+  }
+  
+.detail-box {
+    padding-left: 30px;
+    margin-top: 50px;
+    text-align: left;
+}
+  
+.detail-box h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #000000; /* Text color for better contrast */
+  }
+  
+.detail-box span {
+    color: #007bff;
+   font-size: 65px;
+  }
+  
+.detail-box p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #000000; /* Text color for better contrast */
+    margin-bottom: 30px;
+  }
+  
+  .btn-buy {
+    /* background-color: #007bff; */
+    /* border-color: #007bff; */
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+  
+  .btn-buy:hover {
+    background-color: #375264;
+    border-color: #000000;
+  }
+  
+  
+  .features-container {
+    padding: 50px 50px;
+    background-color: #eff1f3;
+  }
+  
+  .feature-item {
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .feature-item i {
+    color: #333; /* Dark color */
+    margin-bottom: 20px;
+  }
+  
+  .feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+
+  
+.slick-slide >div{
+    margin: 0 10px;
+}
+
+
+
+
+
